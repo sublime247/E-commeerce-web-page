@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1em  auto;
+    padding-bottom: 16px;
+    /* border-bottom: 1px solid grey; */
+    border-bottom: 1px solid  hsl(220, 14%, 75%)
+}
+ul.navs{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 70%;
+}
+ul.navs li a{
+    text-decoration: none;
+    padding-right: 1em;
+    /* color: gray; */
+    color: hsl(219, 9%, 45%);
+}
+div.open-nav{
+    display: none;
+}
+div.close-nav{
+    display: none;
+}
+div.cart-profile{
+    display: none;
+    position: absolute;
+     top: 5em;
+     right: 5em;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+}
+div.cart-profile .ycart{
+    font-weight: 700;
+     padding-top: 1.5em;
+     padding-left: 1em;
+     padding-bottom: 1em;
+     border-bottom: 1px solid  hsl(220, 14%, 75%);
+}
+div.cart-profile .append{
+    text-align: center;
+    margin: 4em auto;
+    color: hsl(219, 9%, 45%);
+}
+div.profile img{
+    width: 50px;
+}
+
+.collections img{
+    border-radius: 10px;
+}
+/* .collections{
+    width: 40%;
+} */
+section{
+    margin: 2em auto;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around
+}
+.store-shoes img{
+     width: 65%;
+     height: auto;
+    
+}
+.trekers{
+    display: none;
+}
+.canvas{
+    display: none;
+}
+.shoe{
+    display: none;
+}
+.thumbnails{
+    margin-right: 0.5em;
+    margin-left: 1em;
+}  
+.thumbnails img{
+   width: 80px;
+   margin-top: 1em;
+   margin-right: 1em;
+}
+.thumbnails .sneakersthumb{
+    border: 3px solid hsl(12, 88%, 59%);
+    opacity: 0.4;
+}
+div.about{
+    margin-top: 5em;
+    position: relative;
+    right: 4em;
+}
+.cancelPrice{
+    text-decoration: line-through;
+    margin-top: 0.5em;
+    color: hsl(219, 9%, 45%);
+    font-weight: 700;
+}
+.about h4{
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-weight: 400;
+}
+.about h1{
+    text-transform: capitalize;
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 30px;
+}
+.about p{
+    padding-bottom: 1em;
+    padding-right: 4em;
+    line-height: 20px;
+}
+div.price{
+    margin-top: 1em;
+}
+.priceTag{
+    font-size: 26px;
+    font-weight: 700;
+}
+.interest {
+    color:hsl(26, 100%, 55%);
+    font-size: 20px;
+    font-weight: 600;
+    background-color:  hsl(25, 100%, 94%);
+    margin-bottom: 0.5em;
+    /* padding: 1em auto; */
+    margin-left: 1em;
+}
+.clicks{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.count{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+     background-color:  rgba(216, 223, 238, 40%);
+      height: 35px;
+}
+.count .minus{
+    margin-left: 7px;
+}
+.count .add{
+    margin-right: 7px;
+}
+.clicks button{
+    width: 200px;
+    border: none;
+    height: 40px;
+    padding: 30px auto;
+    margin-right: 7em;
+    outline: none;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 6px;
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+}
+button img{
+    position: relative;
+    top: 2px;
+    /* margin-top: 5px; */
+    width: 16px;
+    margin-right: 6px;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 750px){
+   nav.header{
+       border: none;  
+       width: 80%;
+       justify-content: space-between;
+   }
+   ul.navs{
+       display: none;
+       flex-direction: column;
+       background-color: white;
+       height: 100vh;   
+   }
+   div.open-nav{
+       display: block;   
+       margin-left: 1em;
+   }
+   div .cart{
+       position: relative;
+       margin-left: 1em;
+   }
+   div.profile img{
+       width: 30px;
+       margin-right: 1em;
+   }
+   section{
+       margin: 1em auto;
+       flex-direction: column;
+       /* width: 100%; */
+       align-items: center;
+       justify-content: center;
+   }
+   .store-shoes img{
+       width: 100%;
+       height: auto;
+   }
+   .collections img{
+    border-radius: 0px;
+}
+   .thumbnails{
+       display: none;
+   }
+div.about{
+    position: relative;
+    right: 0em;
+    margin-top: 1em;
+}
+.about p{
+    padding-right: 3em;
+}
+div.price{
+    /* width: 80%; */
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.clicks{
+    justify-content: center;
+    flex-direction: column;
+}
+.count{
+   width: 100%; 
+}
+.clicks button{
+    margin-right: 0em;
+    margin-top: 2em;
+    width: 100%;
+}
+div.cart-profile{
+    position: absolute;
+    right: 3.5em;
+}
+    
+}
